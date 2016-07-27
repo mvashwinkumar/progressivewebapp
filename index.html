@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="canonical" href="https://mvashwinkumar/pwasample">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My PWA Sample</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="manifest" href="/manifest.json">
+
+  <meta name="msapplication-TileImage" content="icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
+
+  <template id="card-template">
+    <div class="card">
+      <div class="header"></div>
+      <div class="content"></div>
+      <div class="footer"></div>
+    </div>
+  </template>
+
+</head>
+<body>
+  <header class="header">
+    <h1 class="title">My PWA Sample</h1>
+  </header>
+
+  <div class="main" hidden>Main Content here..</div>
+
+  <div class="loader">
+    <svg viewBox="0 0 32 32" width="32" height="32">
+      <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+    </svg>
+  </div>
+
+  <footer class="footer"></footer>
+
+  <script src="./app.js" type="text/javascript" async></script>
+</body>
+</html>
